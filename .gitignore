@@ -25,6 +25,7 @@
 
 # misc
 /.sass-cache
+/.angular
 /connect.lock
 /coverage
 /libpeerconnection.log
@@ -36,3 +37,6 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+
+# Build artefacts
+dist/*

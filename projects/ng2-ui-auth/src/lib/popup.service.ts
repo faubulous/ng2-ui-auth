@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { empty, fromEvent, interval, merge, Observable, of, throwError } from 'rxjs';
+import { EMPTY, fromEvent, interval, merge, of, throwError } from 'rxjs';
 import { delay, map, switchMap, take } from 'rxjs/operators';
 import { IOauth1Options, IOauth2Options, IPopupOptions } from './config-interfaces';
 import { getWindowOrigin } from './utils';
@@ -19,7 +19,7 @@ export class PopupService {
       }
       return of(popupWindow);
     }
-    return empty();
+    return EMPTY;
   }
 
   public waitForClose(popupWindow: Window, cordova = this.isCordovaApp(), redirectUri = getWindowOrigin()) {
@@ -41,10 +41,11 @@ export class PopupService {
     ).pipe(
       switchMap((event: Event & { url: string }) => {
         if (!popupWindow || popupWindow.closed) {
-          return Observable.throw(new Error('Authentication Canceled'));
+          return throwError(() => new Error('Authentication Canceled'));
         }
+
         if (event.url.indexOf(redirectUri) !== 0) {
-          return empty();
+          return EMPTY;
         }
 
         const parser = document.createElement('a');
@@ -65,7 +66,7 @@ export class PopupService {
             return of(allParams);
           }
         }
-        return empty();
+        return EMPTY;
       }),
       take(1)
     );
@@ -75,7 +76,7 @@ export class PopupService {
     return interval(50).pipe(
       switchMap(() => {
         if (!popupWindow || popupWindow.closed) {
-          return throwError(new Error('Authentication Canceled'));
+          return throwError(() => new Error('Authentication Canceled'));
         }
 
         const popupWindowOrigin = getWindowOrigin(popupWindow);
@@ -97,7 +98,8 @@ export class PopupService {
             return of(allParams);
           }
         }
-        return empty();
+
+        return EMPTY;
       }),
       take(1)
     );
