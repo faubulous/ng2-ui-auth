@@ -1,3 +1,5 @@
+**Note: This is a fork of [ronzeidman/ng2-ui-auth](https://github.com/ronzeidman/ng2-ui-auth) for which has been updated to be compatible with Angular 14**
+
 An angular2 repository for authentication based on angular1's satellizer (https://satellizer.herokuapp.com/#/ https://github.com/sahat/satellizer) library. To use this run npm install ng2-ui-auth --save.
 
 If you are migrating from version 7 or below, look at the changelog
