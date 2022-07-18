@@ -29,4 +29,4 @@ jobs:
       - run: npm ci
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: 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
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
