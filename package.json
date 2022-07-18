@@ -1,6 +1,6 @@
 {
-  "name": "ng2-ui-auth",
-  "version": "10.0.1",
+  "name": "@faubulous/ng2-ui-auth",
+  "version": "14.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
