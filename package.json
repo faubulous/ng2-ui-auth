@@ -19,7 +19,7 @@
   "typings": "dist/ng2-ui-auth/ng2-ui-auth.d.ts",
   "metadata": "dist/ng2-ui-auth/ng2-ui-auth.metadata.json",
   "sideEffects": false,
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@angular-devkit/build-angular": "^14.0.6",
     "@angular/animations": "^14.0.6",
