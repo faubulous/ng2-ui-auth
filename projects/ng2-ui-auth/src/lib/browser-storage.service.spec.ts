@@ -1,11 +1,9 @@
 import { TestBed, inject } from '@angular/core/testing';
 import { BrowserStorageService } from './browser-storage.service';
-import { Ng2UiAuthModule } from './ng2-ui-auth.module';
 
 describe('BrowserStorageService', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [Ng2UiAuthModule],
       providers: [BrowserStorageService]
     });
   });
