@@ -21,7 +21,8 @@
   "angularCompilerOptions": {
     "enableIvy": true,
     "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
+    "strictInjectionParameters": true,
+    "compilationMode": "partial"
   },
   "exclude": ["bower_components", "node_modules", "wwwroot"]
 }

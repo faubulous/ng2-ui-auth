@@ -1,16 +1,19 @@
 {
-  "name": "ng2-ui-auth",
-  "version": "10.0.1",
-  "peerDependencies": {
-    "@angular/common": "^8.0.0",
-    "@angular/core": "^8.0.0",
-    "rxjs": "^6.0.0"
+  "name": "@faubulous/ng2-ui-auth",
+  "version": "14.0.3",
+  "dependencies": {
+    "tslib": "^2.4.0"
   },
-  "module": "fesm2015/ng2-ui-auth.mjs",
-  "es2020": "fesm2020/ng2-ui-auth.mjs",
-  "esm2020": "esm2020/ng2-ui-auth.mjs",
-  "fesm2020": "fesm2020/ng2-ui-auth.mjs",
-  "fesm2015": "fesm2015/ng2-ui-auth.mjs",
+  "peerDependencies": {
+    "@angular/common": "^14.0.6",
+    "@angular/core": "^14.0.6",
+    "rxjs": "^7.5.6"
+  },
+  "module": "fesm2015/faubulous-ng2-ui-auth.mjs",
+  "es2020": "fesm2020/faubulous-ng2-ui-auth.mjs",
+  "esm2020": "esm2020/faubulous-ng2-ui-auth.mjs",
+  "fesm2020": "fesm2020/faubulous-ng2-ui-auth.mjs",
+  "fesm2015": "fesm2015/faubulous-ng2-ui-auth.mjs",
   "typings": "index.d.ts",
   "exports": {
     "./package.json": {
@@ -18,18 +21,12 @@
     },
     ".": {
       "types": "./index.d.ts",
-      "esm2020": "./esm2020/ng2-ui-auth.mjs",
-      "es2020": "./fesm2020/ng2-ui-auth.mjs",
-      "es2015": "./fesm2015/ng2-ui-auth.mjs",
-      "node": "./fesm2015/ng2-ui-auth.mjs",
-      "default": "./fesm2020/ng2-ui-auth.mjs"
+      "esm2020": "./esm2020/faubulous-ng2-ui-auth.mjs",
+      "es2020": "./fesm2020/faubulous-ng2-ui-auth.mjs",
+      "es2015": "./fesm2015/faubulous-ng2-ui-auth.mjs",
+      "node": "./fesm2015/faubulous-ng2-ui-auth.mjs",
+      "default": "./fesm2020/faubulous-ng2-ui-auth.mjs"
     }
   },
-  "sideEffects": false,
-  "dependencies": {
-    "tslib": "^2.3.0"
-  },
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy in full compilation mode. This is not allowed.\\nPlease delete and rebuild the package with Ivy partial compilation mode, before attempting to publish.\\n')\" && exit 1"
-  }
+  "sideEffects": false
 }
