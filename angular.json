@@ -39,7 +39,6 @@
       }
     }
   },
-  "defaultProject": "Ng2UiAuth",
   "cli": {
     "analytics": false
   }
