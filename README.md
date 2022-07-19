@@ -46,10 +46,20 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 ## Publishing to npm
 
 To publish the library as a npm package, adapt the package name in `package.json` proceed as follows:
+
 ```
 $ ng test
 $ ng build
 $ cd dist/ng2-ui-auth
 $ npm version X.X.X
 $ npm publish
+```
+
+Alternatively using the provided GitHub workflow:
+
+```
+$ ng test
+$ ng build
+$ npm version X.X.X
+$ git push origin master --follow-tags
 ```
