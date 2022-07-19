@@ -1,28 +1,37 @@
+/* To learn more about this file see: https://angular.io/config/tsconfig. */
 {
   "compileOnSave": false,
   "compilerOptions": {
+    "paths": {
+      "Ng2UiAuth": [
+        "dist/ng2-ui-auth"
+      ]
+    },
     "baseUrl": "./",
-    "declaration": true,
+    "outDir": "./dist/out-tsc",
+    "forceConsistentCasingInFileNames": true,
+    "strict": true,
+    "noImplicitOverride": true,
+    "noPropertyAccessFromIndexSignature": true,
+    "noImplicitReturns": true,
+    "noFallthroughCasesInSwitch": true,
+    "sourceMap": true,
+    "declaration": false,
     "downlevelIteration": true,
-    "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
+    "moduleResolution": "node",
     "importHelpers": true,
-    "lib": ["es2020", "dom"],
     "target": "es2020",
     "module": "es2020",
-    "moduleResolution": "node",
-    "noEmitOnError": true,
-    "outDir": "./dist/out-tsc",
-    "paths": { "Ng2UiAuth": ["dist/"] },
-    "removeComments": true,
-    "sourceMap": true,
-    "typeRoots": ["node_modules/@types"]
+    "lib": [
+      "es2020",
+      "dom"
+    ]
   },
   "angularCompilerOptions": {
-    "enableIvy": true,
-    "fullTemplateTypeCheck": true,
+    "enableI18nLegacyMessageIdFormat": false,
     "strictInjectionParameters": true,
-    "compilationMode": "partial"
-  },
-  "exclude": ["bower_components", "node_modules", "wwwroot"]
+    "strictInputAccessModifiers": true,
+    "strictTemplates": true
+  }
 }
