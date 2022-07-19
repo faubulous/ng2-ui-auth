@@ -1,7 +1,7 @@
 {
   "name": "@faubulous/ng2-ui-auth",
   "description": "API compatible port of ng2-ui-auth to Angular 14+.",
-  "version": "14.0.9",
+  "version": "14.0.10",
   "private": false,
   "repository": {
     "type": "git",
