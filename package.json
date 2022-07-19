@@ -11,7 +11,7 @@
     "clean": "rm -rf dist",
     "prepublishOnly": "npm run build",
     "prebuildpackage": "npm run clean && npm run build",
-    "buildpackage": "cd lib && npm pack",
+    "buildpackage": "cd dist && npm pack",
     "postpublish": "git clean -fd"
   },
   "main": "dist/esm2020/ng2-ui-auth.mjs",

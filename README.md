@@ -9,7 +9,7 @@ The original ng2-ui-auth library is based on [satellizer](https://github.com/sah
 ## Installation
 
 ```ts
-npm i --save @faubulous/ngx-ui-auth
+npm i --save @faubulous/ng2-ui-auth
 ```
 
 ## Usage
