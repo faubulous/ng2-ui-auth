@@ -13,7 +13,7 @@
     "moduleResolution": "node",
     "noEmitOnError": true,
     "outDir": "./dist/out-tsc",
-    "paths": { "Ng2UiAuth": ["dist/ng2-ui-auth"] },
+    "paths": { "Ng2UiAuth": ["dist/"] },
     "removeComments": true,
     "sourceMap": true,
     "typeRoots": ["node_modules/@types"]

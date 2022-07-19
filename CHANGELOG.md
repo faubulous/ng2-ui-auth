@@ -1,29 +1,27 @@
-#### 10.0.1
+#### 14.0.0
+- Port to Angular 14
+- Restructured source code to simplify npm packaging
 
-- using latest google api
+#### 10.0.1
+- Using latest google api
 
 #### 10.0.0
-
-- support angular 8
+- Support Angular 8
 
 #### 9.1.0
-
-- added oauthOptions to the exchange for token flow in oauth 1.0a
+- Added oauthOptions to the exchange for token flow in oauth 1.0a
 
 #### 9.0.0
-
-- using angular cli version 6 to build the library
+- Using angular cli version 6 to build the library
 - StorageType is now a proper enum
 - Universal might be working now
 - Update providers function
 
 #### 8.0.1
-
 - fixed facebook and twitter config
 - fixed a bug in JwtInterceptor
 
 #### 8.0.0
-
 - added storage type 'none' and 'memory' and added StorageType "enum".
 - `forRoot` without options will give you the ability to inject your own config
 - you can decide to not inject the JwtInterceptor view `forRoot` function
@@ -63,11 +61,9 @@
   - No more `requiredUrlParams`/`optionalUrlParams` confusion! introducing `additionalUrlParams` - just add a param name, and value and it will be added to the request, if the value is `undefined` the param will not be added, if the value is `null` it will be added without a value, if the value is a function, it will run the function.
 
 #### 7.0.2
-
 - issue #105: Make the library FESM15 includeable by using ng-packagr.
 
 #### 7.0.1
-
 - issue #98: responseType = 'token' not returning control to client app
 - pull request #103: update packages + fixed support for TypeScript 2.4
 - `logout` now removes the token only if subscribing to it, to logout syncronically use `removeToken` instead.
@@ -78,23 +74,18 @@
 **BREAKING CHANGE:** This version drops official support for angular 2.0
 
 #### 6.2.0
-
 - pull request #91: rename StorageService to BrowserStorageService + add BaseStorage.
 
 #### 6.1.6
-
 - fixed google new login 500 issue with undefined optional params
 
 #### 6.1.4
-
 - supporting angular 4 in package.json
 
 #### 6.1.3
-
 - pull request #83: avoid import Type from `src`.
 
 #### 6.1.2
-
 - pull request #82: throw 'Authentication Canceled' when on a cordova app
 - issue #78: added optional params on google provider
 - issue #77: added ability to change the exchangeForToken request method
@@ -105,14 +96,12 @@
 - throwing `new Error('Authentication Canceled')` when popup is closed prematurely so you could stop your spinners on `subscribe({..., error: err => <stop spinners here>, complete: () => <and here>})`
 
 #### 6.0.0
-
 - issue #68 - fixed issue with responseType='token'
 - issue #65 - added tryTokenRefreshIfUnauthorized (off by default)
 - pull request #64 & pull request #67 - added ability to change the httpService `Ng2UiAuthModule.forRootWithCustomHttp(config, {provide: JwtHttp, useClass: MyHttp, deps: [Http, SharedService, ConfigService]})`
 - **BREAKING CHANGE:** Replaced `Ng2UiAuthModule.getWithConfig(MyAuthConfig)` with `Ng2UiAuthModule.forRoot(MyAuthConfig)` to look more like other modules
 
 #### 5.0.0
-
 - might be breaking: changed out folder names, not linking to the bundled version by default because of webpack issues with the pre-bundled version
 - pull request #63 set token only when it's available
 - pull request #61 [expiration date] check payload is defined.
@@ -120,12 +109,10 @@
 - pull request #57 allow any type in http body.
 
 #### 4.1.1
-
 - `cordova` variable defaults to `window.cordova`
 - fixed issue with oauth 1
 
 #### 4.1.0
-
 - fix issue #47 using this library without server url causes exception.
 - switched concatMap with switchMap (should be a better fit for that scenerio)
 - added ability to force "exchangeForToken" by setting it to true in `IOauthOptions`
@@ -134,7 +121,6 @@
 - fix issue #50 tokenRoot and tokens received from data property did not resolve.
 
 #### 4.0.0
-
 - Aligned default config with Satellizer (added Spotify)
 - AOT compilation now works
 - Peer dependency is now ^2.0.0

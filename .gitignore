@@ -38,6 +38,5 @@ testem.log
 .DS_Store
 Thumbs.db
 
-# Build artefacts
-prepackage.js
+# Build Artefacts
 dist/*
