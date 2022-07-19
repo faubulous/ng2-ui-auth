@@ -8,7 +8,11 @@
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e",
-    "prepublish": "ng build"
+    "clean": "rm -rf dist",
+    "prebuildpackage": "npm run clean && ng build && tsc package.ts && node package.js",
+    "buildpackage": "cd dist/ng2-ui-auth && npm pack",
+    "prepublishOnly": "npm run build && cp -r ./lib/* . && rm -rf ./lib",
+    "postpublish": "git clean -fd"
   },
   "main": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
   "module": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",

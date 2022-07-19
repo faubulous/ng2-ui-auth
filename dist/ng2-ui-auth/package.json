@@ -1,32 +1,20 @@
 {
   "name": "@faubulous/ng2-ui-auth",
-  "version": "14.0.3",
+  "version": "14.0.5",
+  "scripts": {},
+  "main": "ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "module": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "esm2020": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "fesm2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.mjs",
+  "fesm2020": "dist/ng2-ui-auth/fesm2020/ng2-ui-auth.mjs",
+  "types": "dist/ng2-ui-auth/index.d.ts",
+  "files": [
+    "dist/ng2-ui-auth"
+  ],
+  "sideEffects": false,
+  "private": false,
+  "devDependencies": {},
   "dependencies": {
     "tslib": "^2.4.0"
-  },
-  "peerDependencies": {
-    "@angular/common": "^14.0.6",
-    "@angular/core": "^14.0.6",
-    "rxjs": "^7.5.6"
-  },
-  "module": "fesm2015/faubulous-ng2-ui-auth.mjs",
-  "es2020": "fesm2020/faubulous-ng2-ui-auth.mjs",
-  "esm2020": "esm2020/faubulous-ng2-ui-auth.mjs",
-  "fesm2020": "fesm2020/faubulous-ng2-ui-auth.mjs",
-  "fesm2015": "fesm2015/faubulous-ng2-ui-auth.mjs",
-  "typings": "index.d.ts",
-  "exports": {
-    "./package.json": {
-      "default": "./package.json"
-    },
-    ".": {
-      "types": "./index.d.ts",
-      "esm2020": "./esm2020/faubulous-ng2-ui-auth.mjs",
-      "es2020": "./fesm2020/faubulous-ng2-ui-auth.mjs",
-      "es2015": "./fesm2015/faubulous-ng2-ui-auth.mjs",
-      "node": "./fesm2015/faubulous-ng2-ui-auth.mjs",
-      "default": "./fesm2020/faubulous-ng2-ui-auth.mjs"
-    }
-  },
-  "sideEffects": false
+  }
 }
