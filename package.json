@@ -7,17 +7,18 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "prepublish": "ng build"
   },
-  "main": "dist/ng2-ui-auth/bundles/ng2-ui-auth.umd.js",
-  "module": "dist/ng2-ui-auth/fesm5/ng2-ui-auth.js",
-  "es2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.js",
-  "esm5": "dist/ng2-ui-auth/esm5/ng2-ui-auth.js",
-  "esm2015": "dist/ng2-ui-auth/esm2015/ng2-ui-auth.js",
-  "fesm5": "dist/ng2-ui-auth/fesm5/ng2-ui-auth.js",
-  "fesm2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.js",
-  "typings": "dist/ng2-ui-auth/ng2-ui-auth.d.ts",
-  "metadata": "dist/ng2-ui-auth/ng2-ui-auth.metadata.json",
+  "main": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "module": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "esm2020": "dist/ng2-ui-auth/esm2020/ng2-ui-auth.mjs",
+  "fesm2015": "dist/ng2-ui-auth/fesm2015/ng2-ui-auth.mjs",
+  "fesm2020": "dist/ng2-ui-auth/fesm2020/ng2-ui-auth.mjs",
+  "types": "dist/ng2-ui-auth/index.d.ts",
+  "files": [
+    "dist/ng2-ui-auth"
+  ],
   "sideEffects": false,
   "private": false,
   "devDependencies": {

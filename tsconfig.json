@@ -2,20 +2,20 @@
   "compileOnSave": false,
   "compilerOptions": {
     "baseUrl": "./",
-    "declaration": false,
+    "declaration": true,
     "downlevelIteration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "importHelpers": true,
     "lib": ["es2020", "dom"],
+    "target": "es2020",
     "module": "es2020",
     "moduleResolution": "node",
     "noEmitOnError": true,
     "outDir": "./dist/out-tsc",
-    "paths": { "Ng2UiAuth": ["dist/Ng2UiAuth"] },
+    "paths": { "Ng2UiAuth": ["dist/ng2-ui-auth"] },
     "removeComments": true,
     "sourceMap": true,
-    "target": "es2020",
     "typeRoots": ["node_modules/@types"]
   },
   "angularCompilerOptions": {
